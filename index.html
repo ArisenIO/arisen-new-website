@@ -381,7 +381,7 @@
       <div class="col-lg-4 d-lg-flex">
         <div class="card shadow-lg">
           <div class="card-body py-4">
-            <span class="d-block h1 display-4" id="rix-price">
+            <span class="d-block h1 display-4" id="rix-price2">
               RIX
             </span>
             <p>The currency price of the RISE (RIX) cryptocurrency.</p>
@@ -615,7 +615,7 @@
           <div class="">
               <h1 class="display-4 font-alt-1 text-center mt-2">The Arisen Story</h1>
               <p class="description">Arisen's technology is powerful but so is its story. No software project has survived the struggles or the national headlines like this one has.</p>
-              <div class="text-center"><a href="our-story.html" class="btn btn-lg btn-primary">Read Our Story</a></div>
+              <div class="text-center"><a href="https://peepsx.com/peeps-story.html" class="btn btn-lg btn-primary">Read Our Story</a></div>
               
             </div>
       </div>
@@ -707,6 +707,7 @@
       axios.get('https://nv6khovry9.execute-api.us-east-1.amazonaws.com/dev/rsn_price_from_bts')
             .then(function (response) {
             document.getElementById('rix-price').innerHTML = ` $ ${parseFloat(response.data.data.USD.price).toFixed(4)}`;
+            document.getElementById('rix-price2').innerHTML = ` $ ${parseFloat(response.data.data.USD.price).toFixed(4)}`;
             })
             .catch(function (error) {
                 console.log(error)

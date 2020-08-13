@@ -9,7 +9,7 @@
     <meta name="keywords" content="none">
     <meta name="author" content="Arisen Foundation">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/logo/peepfab.png">
+    <link rel="shortcut icon" href="assets/img/logo/arisen.png">
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i%7cPermanent+Marker" rel="stylesheet">
@@ -358,8 +358,8 @@
 
 <!--------------------------------- Header Block End --------------------------->
 <!------------------------- Distributed Storage Block 1 Start------------------------>
-<section class="p-0 bg-dark bg-gradient">
-  <img src="assets/img/Distributed Storage.jpg" alt="Image" class="bg-image position-md-absolute opacity-30">
+<section class="p-0 bg-dark bg-dark">
+  <img src="assets/img/Tiger.jpg" alt="Image" class="bg-image position-md-absolute opacity-60">
   <div class="container">
     <div class="row height-md-50">
       <div class="col-md-8 col-lg-6">
@@ -369,7 +369,7 @@
                 No more servers.
             </h1>
             <p class="lead">
-                Arisen provides a distributed and decentralized solution for the distribution of files, like the files of a website or web application or the media files relating to a video network or music streaming service.
+                Arisen provides a distributed and decentralized solution for the peer-to-peer storage of files, like the files of a website or web application or the media files relating to a video network or music streaming service.
             </p>
             <a href="#the-distributed-file-system" class="btn btn-primary btn-lg">Learn more</a>
           </div>
@@ -386,7 +386,7 @@
         <div class="col-xl-8 col-lg-8 col-md-8 center-text">
             <div class="">
                 <h1 class="display-4">The distributed file system.</h1>
-                <p class="description">Arisen uses an off-chain distributed file system known as dWebFS. dWebFS utilizes the dDatabase protocol so that files and their metadata are converted to binary, fragmented between peers and exchanges in a duplex binary channel so that a dWebFS can be recreated after transfer amongst the swarm.</p>
+                <p class="description">Arisen uses an off-chain distributed file system known as dWebFS. dWebFS utilizes the dDatabase protocol so that files and their metadata are converted to binary, fragmented between peers and exchanged in a duplex binary channel so that a dWebFS can be recreated on devices that are fetching it from the swarm.</p>
                 <a href="#the-swarm"><i class="material-icons d-block down-arrow arrow bounce">keyboard_arrow_down</i></a>
               </div>
         </div>
@@ -402,7 +402,7 @@
         <div class="col-xl-8 col-lg-8 col-md-8 center-text">
             <div class="">
                 <h1 class="display-4">The swarm.</h1>
-                <p class="description">Arisen uses a series of peer-to-peer networking libraries like dWSwarm so that peers can locate each other as well as the dWebFS they're sharing on the network. This peer discovery process is efficient, while also allowing a view to retrieve a  dWebFS from a swarm of peers simultaneously.</p>
+                <p class="description">Arisen uses a series of peer-to-peer networking libraries like dWSwarm so that peers can locate other peers, as well as the files they're sharing. This peer discovery process is efficient, and allows any peer to download a dWebFS from a swarm of peers simultaneously.</p>
                 <a href="#addressable-content"><i class="material-icons d-block down-arrow arrow bounce">keyboard_arrow_down</i></a>
               </div>
         </div>
@@ -434,7 +434,7 @@
         <div class="col-xl-8 col-lg-8 col-md-8 center-text">
             <div class="">
                 <h1 class="display-4">dDNS and DHT-based discovery.</h1>
-                <p class="description">For absolute redundancy, dWebFS uses multiple discovery methods, from regular DNS, decentralized DNS, BitTorrent's Kademilia-based DHT and Multicast. In case DNS nodes are unreachable, a dWebFS can still be discovered on BitTorrent's global DHT.</p>
+                <p class="description">For absolute redundancy, dWebFS uses multiple discovery methods, including regular DNS, decentralized DNS, BitTorrent's Kademilia-based DHT and Multicast. In case DNS nodes are unreachable, a dWebFS can still be discovered via BitTorrent's global DHT.</p>
                 <a href="#file-versioning"><i class="material-icons d-block down-arrow arrow bounce">keyboard_arrow_down</i></a>
               </div>
         </div>
@@ -450,7 +450,7 @@
         <div class="col-xl-8 col-lg-8 col-md-8 center-text">
             <div class="">
                 <h1 class="display-4">File versioning.</h1>
-                <p class="description">A dWebFS uses the dDatabase protocol to store the metadata of files as well as a version for every revision of every file in the file system. This allows peers to retrieve specific versions of a dWebFS or in the case of the dWeb, specific versions of a website or web application.</p>
+                <p class="description">A dWebFS uses the dDatabase protocol to store the metadata of files as well as a copy of every revision of each file in the file system. This allows peers to retrieve specific versions of a dWebFS or in the case of the dWeb, specific versions of a website or web application.</p>
                 <a href="#domain-based-discovery"><i class="material-icons d-block down-arrow arrow bounce">keyboard_arrow_down</i></a>
               </div>
         </div>
@@ -466,7 +466,7 @@
         <div class="col-xl-8 col-lg-8 col-md-8 center-text">
             <div class="">
                 <h1 class="display-4">Domain-based discovery.</h1>
-                <p class="description">Domains can be connected to a dWebFS address (dWeb network address with a TXT record, so that a dWebFS can be discovered via a domain, rather than just a hash-based network address (e.g. dweb://arisen.network or dweb://arisen.dcom). This allows a dWebFS to be viewed in dweb browsers (like dBrowser) almost effortlessly.</p>
+                <p class="description">Domains can be connected to a dWebFS address (dWeb network address) using a TXT record, so that a dWebFS can be discovered via a domain, rather than just a hash-based network address (e.g. dweb://arisen.network or dweb://arisen.dcom). This allows a dWebFS to be viewed in dWeb browsers (like dBrowser) almost effortlessly.</p>
                 
               </div>
         </div>
